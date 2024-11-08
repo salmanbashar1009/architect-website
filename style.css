@@ -56,8 +56,35 @@ nav li a{
     margin: 25px auto;
 }
 
+.banner-title{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+.banner-description{
+    color: #424242;
+    padding-bottom: 30px;
+}
+
+.btn-primary{
+    color: #FFFFFF;
+    background: #FF900E;
+    border: none;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;    
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
 .banner img{
     width: 1050px; 
 }
+
+
 
 
