@@ -5,22 +5,28 @@
 * {
     font-family: "Work Sans", sans-serif;
     margin: 0;
+    padding: 0;
 }
 
-.btn-primary{
+.btn-primary {
     color: #FFFFFF;
     background: #FF900E;
     border: none;
     padding: 20px 25px;
     border-radius: 8px;
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 20px;
     cursor: pointer;
 }
 
+.body-text-light-gray {
+    color: #727272;
+    padding-bottom: 30px;
+}
+
 /* header styles started*/
-.header-section{
+.header-section {
     background: rgba(255, 144, 14, 0.1);
     padding: 45px 240px;
 
@@ -40,37 +46,37 @@ nav {
 
 }
 
-nav > ul{
+nav>ul {
     display: flex;
 }
 
-nav li{
+nav li {
     list-style: none;
     margin-left: 30px;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-nav li a{
+nav li a {
     text-decoration: none;
     color: #424242;
 }
 
 /* banner styles */
-.banner{
+.banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 25px auto;
 }
 
-.banner-title{
+.banner-title {
     color: #131313;
     font-size: 4rem;
     font-weight: 700;
@@ -78,12 +84,7 @@ nav li a{
     padding-bottom: 16px;
 }
 
-.banner-description{
-    color: #424242;
-    padding-bottom: 30px;
-}
-
-.banner img{
+.banner img {
     width: 100%;
 }
 
@@ -91,8 +92,11 @@ nav li a{
 
 /* Main styles started */
 
-.teams-container{
-    max-width: 80%;
+main {
+    max-width: 1440px;
+}
+
+.teams-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,108 +105,128 @@ nav li a{
 
 }
 
-.teams-content{
-    max-width: 55%;
-   margin-left: 6%;
-   justify-content: center;
-   align-items: center;
+.teams-content {
+    margin-left: 60px;
+    ;
+    align-items: center;
 }
 
-.teams-title{
-    max-width: 400px;
+.teams-title {
+    width: 400px;
+    font-size: 3rem;
     padding-bottom: 20px;
 }
 
-.teams-title #quick-list{
-    font-size: 3rem;
+.teams-title #quick-list {
     color: #727272;
     font-weight: 500;
 }
 
-.teams-title #of-our{
-    font-size: 3rem;
+.teams-title #of-our {
     color: #131313;
     font-weight: 700;
 }
 
-.teams-title #features{
-    font-size: 3rem;
+.teams-title #features {
     color: #FF900E;
     font-weight: 700;
 }
 
-.teams-img-contaner{
-    max-width: 45%;
+.teams-img-contaner {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 1.5rem;
-}
-
-.teams-description{
-    width: 550px;
-    font-size: 16px;
-    color: #727272;
-    padding-bottom: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
 
 /* Responsive media queries */
 
 /* mobile devices */
 
-@media screen  and (max-width: 576px) {
-    .header-section{
-        padding: 16px;
-    
+@media screen and (max-width: 576px) {
+
+    .header-section,
+    .teams-container {
+        padding: 12px;
+
     }
-    
-    nav{
+
+    nav,
+    .teams-container {
         flex-direction: column;
         justify-content: center;
     }
 
-    nav > ul{
+    nav>ul {
         margin-top: 20px;
-        margin-right: 50px;
-        
+        margin-right: 25px;
+
     }
 
-    nav li{
+    nav li {
         margin-left: 20px;
         font-size: 16px;
-        font-weight: 500;       
+        font-weight: 500;
     }
 
-    .banner-title{
+    .banner-title {
         font-size: 2rem;
     }
+
+    .teams-img-contaner {
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+        column-gap: 10px;
+    }
+
+    .teams-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .body-text-light-gray {
+        font-size: 14px;
+        text-align: center;
+        padding: 16px;
+    }
+
+    .banner-content,
+    .teams-content {
+        text-align: center;
+        margin: 0;
+        padding: 16px;
+
+    }
+
+
+
 
 }
 
 /* tablet or medium devices */
 
-@media screen  and (min-width: 577px) and (max-width: 850px) {
-    .header-section{
+@media screen and (min-width: 577px) and (max-width: 850px) {
+    .header-section {
         padding: 25px 60px;
     }
 
-    nav{
+    nav {
         flex-direction: column;
         justify-content: center;
     }
 
-    nav > ul{
+    nav>ul {
         margin-top: 30px;
         margin-right: 60px;
-        
+
     }
 
-    nav li{
+    nav li {
         margin-left: 20px;
         font-size: 20px;
-        font-weight: 500;       
+        font-weight: 500;
     }
 
-    .banner-title{
+    .banner-title {
         font-size: 3rem;
     }
 }
@@ -210,15 +234,8 @@ nav li a{
 
 /* large devices */
 
-@media screen  and (min-width: 850px) and (max-width: 1190px) {
-    .header-section{
+@media screen and (min-width: 850px) and (max-width: 1190px) {
+    .header-section {
         padding: 30px 60px;
     }
 }
-
-    
-
-
-
-
-
