@@ -25,6 +25,12 @@
     padding-bottom: 30px;
 }
 
+.teams-title, .facts-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
 /* header styles started*/
 .header-section {
     background: rgba(255, 144, 14, 0.1);
@@ -122,11 +128,6 @@ main {
     font-weight: 500;
 }
 
-.teams-title #of-our {
-    color: #131313;
-    font-weight: 700;
-}
-
 .teams-title #features {
     color: #FF900E;
     font-weight: 700;
@@ -181,6 +182,7 @@ main {
     .teams-title {
         font-size: 2rem;
         text-align: center;
+        width: 340px;
     }
 
     .body-text-light-gray {
