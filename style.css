@@ -34,7 +34,7 @@
 /* header styles started*/
 .header-section {
     background: rgba(255, 144, 14, 0.1);
-    padding: 45px 240px;
+    padding: 50px 150px;
 
 }
 
@@ -100,14 +100,15 @@ nav li a {
 
 main {
     max-width: 1440px;
+
 }
 
 .teams-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
     padding: 60px 240px;
+    margin: 5px auto;
 
 }
 
@@ -137,6 +138,42 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+}
+/* teams section styles ended */
+
+/* facts section styles started */
+.facts-container{
+    padding: 50px 120px;
+    
+}
+
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    gap: 100px
+
+    
+}
+
+.facts-card{
+    border: 5px solid #FF900E;
+    text-align: center;
+    padding: 20px;
+    width: 350px;
+    border-radius: 5px;
+   
+}
+
+.card-stats{
+font-size: 2.8rem;
+color: #424242;
+}
+
+.card-title{
+font-weight: 600;
+font-size: 20px;
+color: #727272;
 }
 
 /* Responsive media queries */
